@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Dhvani/Downloads/conejovalleycounseling-nextjs-tailwind/src/app/page.js"],"sourcesContent":["import fs from \"node:fs\";\nimport path from \"node:path\";\nimport Script from \"next/script\";\n\nexport default function HomePage() {\n  const contentPath = path.join(process.cwd(), \"src/app/content.html\");\n  const content = fs.readFileSync(contentPath, \"utf8\");\n  return (\n    <main className=\"min-h-screen\">\n      <div dangerouslySetInnerHTML={{ __html: content }} />\n      <Script src=\"/site.js\" strategy=\"afterInteractive\" />\n    </main>\n  );\n}\n"],"names":["HomePage","contentPath","join","process","cwd","content","readFileSync","className","dangerouslySetInnerHTML","__html","src","strategy"],"mappings":";;;;;AAAA;AACA;AACA;;;;;AAEe,SAASA;IACtB,MAAMC,cAAc,4HAAI,CAACC,IAAI,CAACC,QAAQC,GAAG,IAAI;IAC7C,MAAMC,UAAU,wHAAE,CAACC,YAAY,CAACL,aAAa;IAC7C,qBACE,8OAAC;QAAKM,WAAU;;0BACd,8OAAC;gBAAIC,yBAAyB;oBAAEC,QAAQJ;gBAAQ;;;;;;0BAChD,8OAAC,yIAAM;gBAACK,KAAI;gBAAWC,UAAS;;;;;;;;;;;;AAGtC"}}]
+}
